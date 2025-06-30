@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taza Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.category h2 {
+    margin-top: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item h3 {
+    margin: 10px 0 5px;
+}
+
+.item p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #2c3e50;
+}
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav bar --> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Taza Restaurant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/menu_page.html">Menu  <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact_us.html">Contact Us</a>
+            </li>
+    
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <!--menu-->
+      <div class="menu-grid">
+        <!-- Eastern Dishes -->
+        <div class="category">
+            <h2>Eastern Dishes</h2>
+            <hr>
+
+            <div class="item">
+                <img src="/photo/eastern food.jfif" alt="Eastern Dish 1">
+                <h3>Chicken Mandi <span class="badge badge-warning">offer 50%</span></h3>
+                <p>This chicken and rice dish is not your average recipe - a traditional Yemeni recipe that combines succulent chicken, perfectly seasoned with a warm spice blend and served with glistening yellow rice, topped with fried onions, almond and raisins. There's nothing like it!.</p>
+                <p class="price">$12</p>
+            </div>
+            <br>
+
+            <div class="item">
+                <img src="/photo/Chicken Machboos - Every Little Crumb Arabic chicken and rice- Every Little Crumb.jfif" alt="Eastern Dish 2">
+                <h3>Chicken Machboos</h3>
+                <p>A classic Middle Eastern dish, spiced rice cooked in chicken broth with roasted chicken and toasted nuts. So good!.</p>
+                <p class="price">$15</p>
+            </div>
+            <br>
+
+            <div class="item">
+                <img src="/photo/Egyptian Koshari Recipe + Video.jfif" alt="Eastern Dish 2">
+                <h3>Egyptian Koshari</h3>
+                <p>Short description of the Eastern dish.</p>
+                <p class="price">$16.5</p>
+            </div>
+            <br>
+
+            <div class="item">
+                <img src="/photo/Maqluba (Upside-Down Layered Rice) Recipe _ Metropolitan Market.jfif" alt="Eastern Dish 2">
+                <h3>Maqluba</h3>
+                <p>Maqluba, in Arabic, means upside-down. This layered rice and vegetable dish is a showstopper! It is traditionally served in Iraq, Lebanon, Palestine, Jordan, and Syria. Don't be intimidated by the number of steps—it's actually pretty easy and well worth the effort. Find fried onions for the garnish in the grocery aisle; they add both crunch and flavor.</p>
+                <p class="price">$13</p>
+            </div>
+            <br>
+
+            <div class="item">
+                <img src="/photo/Authentic Shish Tawook Chicken Skewers Recipe _ Little Sunny Kitchen.jfif" alt="Eastern Dish 2">
+                <h3>Shish Tawook Chicken</h3>
+                <p>Authentic Shish Tawook Lebanese grilled chicken skewers or kabobs marinated in a yogurt-based marinade, then grilled until tender and juicy.</p>
+                <p class="price">$15</p>
+            </div>
+            <br>
+        </div>
+
+        <!-- Western Dishes -->
+        <div class="category">
+            <h2>Western Dishes</h2>
+            <hr>
+            <div class="item">
+                <img src="/photo/western food.jfif" alt="Western Dish 1">
+                <h3>Pork Tonkatsu</h3>
+                <p>A delicious recipe for Japanese-style pork tonkatsu that is twice-dredged in egg for an even and crispy coating.</p>
+                <p class="price">$14</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Garlic Prawn Spaghetti _ Marion's Kitchen (1).jfif" alt="Western Dish 2">
+                <h3>Garlic Prawn Spaghetti</h3>
+                <p>This easy garlic prawn pasta dish has all the ingredients for a successful dinner – garlic prawn pasta. A winner dinner!.</p>
+                <p class="price">$18</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Chicken Chop With Blackpepper Sauce.jfif" alt="Western Dish 2">
+                <h3>Chicken Chop</h3>
+                <p>Bahan dan Cara membuat Chicken Chop With Blackpepper Sauce.</p>
+                <p class="price">$19.5</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Balsamic Rosemary Grilled Chicken - Simply Scratch.jfif" alt="Western Dish 2">
+                <h3>Grilled Balsamic Rosemary Chicken</h3>
+                <p>If you're looking for a simple and flavor-packed recipe to grill, you must try this Balsamic Rosemary Grilled Chicken! Chicken soaks in a robust marinade of garlic, brown sugar, balsamic vinegar and rosemary before heading off to the grill. Serve as is with just about any side dish or slice to top of your favorite salad.</p>
+                <p class="price">$23</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Spaghetti Bolognese.jfif" alt="Western Dish 2">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Recipe video above. My everyday Bolognese recipe I make over and over again. This Meat Sauce has terrific depth of flavour for such a quick recipe - though if you have the time, it's stellar cooked slowly for a couple of hours. My 3 "secret" tips are: Worcestershire Sauce, Beef Bouillon Cubes and a touch of sugar.</p>
+                <p class="price">$20</p>
+            </div>
+            <br>
+        </div>
+
+        <!-- Desserts -->
+        <div class="category">
+            <h2>Desserts</h2>
+            <hr>
+            <div class="item">
+                <img src="/photo/desert..jfif" alt="Dessert 1">
+                <h3>Cheesecake</h3>
+                <p>The next time you need a sweet treat to impress, make this stunning strawberry cheesecake recipe. It's rich, creamy, and delightfully decadent.</p>
+                <p class="price">$8</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/White Chocolate Blueberry Cupcakes.jfif" alt="Dessert 2">
+                <h3>White Chocolate Blueberry Cupcakes</h3>
+                <p>Dive in the whimsical delight of White Chocolate Blueberry Cupcakes, where creamy white chocolate meets the vibrant zing of fresh blueberries. Each cupcake is a masterpiece of flavor, perfectly balanced and irresistibly sweet. Crafted with love and care, these cupcakes are not just a dessert, they're a celebration in every bite!.</p>
+                <p class="price">$10</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Mocha Brownie Ice Cream Cake _ The Best Homemade Ice Cream Cake Recipe.jfif" alt="Dessert 2">
+                <h3>Mocha Brownie Ice Cream Cake</h3>
+                <p>This Mocha Brownie Ice Cream Cake is delicious! It has beautiful layers of coffee ice cream, brownies, Oreo crumbles, hot fudge sauce and coffee whipped cream icing. It’s a wonderful combination that you won’t be able to resist!.</p>
+                <p class="price">$9</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Classic Vanilla Panna Cotta.jfif" alt="Dessert 2">
+                <h3>Classic Vanilla Panna Cotta</h3>
+                <p>Vanilla Panna Cotta is a classic Italian dessert that we serve cold. It's fantastic with berries and a great recipe to make ahead for your guests or family.</p>
+                <p class="price">$9.5</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Mixed Berry Tart Recipe _ Driscoll's (1).jfif" alt="Dessert 2">
+                <h3>Mixed Berry Tart</h3>
+                <p>This Mixed Berry Tart is a perfectly delicious treat to share or for yourself!</p>
+                <p class="price">$10</p>
+            </div>
+            <br>
+        </div>
+
+        <!-- Appetizers -->
+        <div class="category">
+            <h2>Appetizers</h2>
+            <hr>
+            <div class="item">
+                <img src="/photo/Best Keema Samosa Recipe (Patti Samosa) - Cubes N Juliennes.jfif" alt="Appetizer 1">
+                <h3>Samosa</h3>
+                <p>This delicious recipe for Keema Samosa is the perfect handheld snack. Filled with a bright, spicy, and smoky meat filling and fried to crispy golden perfection, you will love this tasty and savory patti samosa appetizer.</p>
+                <p class="price">$6</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Air Fryer Mozzarella Sticks.jfif" alt="Appetizer 2">
+                <h3>Mozzarella Sticks <span class="badge badge-warning">offer 50%</span></h3>
+                <p>Cooking Frozen Mozzarella Sticks in an Air Fryer is a fantastic quick and easy appetizer or snack. Air Fryer Mozzarella Sticks get super crisp on the outside with perfectly melted cheese inside.</p>
+                <p class="price">$7</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Veg Spring Rolls (Deep Fried and Air Fried).jfif" alt="Appetizer 2">
+                <h3>Veg Spring Roll</h3>
+                <p>Veg Spring Roll is an addictive Chinese appetizer that's made with a noodle filling encased in a wheat-based pastry wrapper. Wrapped like mini burritos and deep-fried till crisp, these are the first things to go at a party. I recently discovered that these get just as crispy in the air fryer so I've added instructions below for air fryer spring rolls as well.</p>
+                <p class="price">$9</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Caprese Bites With Pesto.jfif" alt="Appetizer 2">
+                <h3>Caprese With Pesto Bites</h3>
+                <p>Enjoy these mini sized Caprese Bites with Pesto appetizers at your next party. Extra special by making your own pesto!</p>
+                <p class="price">$11</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Loaded Mashed Potato Balls.jfif" alt="Appetizer 2">
+                <h3>Mashed Potato Balls</h3>
+                <p>Loaded Mashed Potato Balls are SO much better than tater tots.</p>
+                <p class="price">$11.5</p>
+            </div>
+            <br>
+
+        </div>
+
+        <!-- Beverages -->
+        <div class="category">
+            <h2>Beverages</h2>
+            <hr>
+            <div class="item">
+                <img src="/photo/Caramel Hazelnut Iced Coffee [10 Minutes].jfif" alt="Beverage 1">
+                <h3>Caramel Hazelnut Iced Coffee</h3>
+                <p>Indulge in the ultimate refreshment with our Caramel Hazelnut Iced Coffee recipe. This delightful concoction blends rich coffee with sweet caramel and nutty hazelnut for a perfect, anytime treat.</p>
+                <p class="price">$5</p>
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Strawberry Banana Smoothie (+ Easy Recipe).jfif" alt="Beverage 1">
+                <h3>Strawberry Banana Smoothie <span class="badge badge-warning">offer 50%</span></h3>
+                <p>This pretty-in-pink strawberry banana smoothie recipe is a fun and fruity breakfast on the go! It’s fast, easy to make, and delicious to the last sip.</p>
+                <p class="price">$6</p> 
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Strawberry Coconut Daiquiri.jfif" alt="Beverage 1">
+                <h3>Strawberry Coconut Daiquiri</h3>
+                <p>Wishing you were on a tropical island? This Strawberry Coconut Daiquiri is an easy-to-make rum-based frozen cocktail that will have you feeling like you're on a beach vacation!.</p>
+                <p class="price">$9</p> 
+            </div>
+            <br>
+            <div class="item">
+                <img src="/photo/Healthy Pumpkin Chocolate Chip Oatmeal Cookies - Sally's Baking Addiction.jfif" alt="Beverage 1">
+                <h3>Chocolate Chip Oatmeal Cookies</h3>
+                <p>These healthy pumpkin oatmeal cookies use a lot less sugar than my regular pumpkin oatmeal cookies and there's no butter or oil in the dough.</p>
+                <p class="price">$10</p> 
+            </div>
+            <br>
+        </div>
+    </div>
+      <footer >
+        <div class="footer-section">
+            <h3>address:</h3>
+            <p>123 restaurants street - Cairo - Egypt</p>
+            <h3>phone:</h3>
+            <p>+20 123 456 789</p>
+            <h3>E-Mail: </h3>
+            <p>info@tazarestaurant.com</p>
+            <h3>Opening:</h3>
+            <p>everyday, from 9 AM to 2 Am</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/home_page.html">Home</a></li>
+                <li><a href="/menu_page.html">Menu</a></li>
+                <li><a href="/about_us.html">About Us</a></li>
+                <li><a href="/contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
